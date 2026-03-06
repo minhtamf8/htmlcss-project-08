@@ -149,6 +149,10 @@
                 font-weight: 400;
                 color: #9e9da8;
             }
+
+            @include abstracts.screen(sm) {
+                font-style: 1.6rem !important;
+            }
         }
 
         &-input-icon {
@@ -235,6 +239,12 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 32px;
+
+        @include abstracts.screen(sm) {
+            position: sticky;
+            bottom: 0;
+            background: var(--filter-form-bg);
+        }
     }
 
     &__cancel,
@@ -244,6 +254,7 @@
 
         @include abstracts.screen(sm) {
             flex: 1;
+            height: 42px;
         }
     }
 
@@ -268,6 +279,11 @@
 
         @include abstracts.screen(xl) {
             flex-direction: column;
+        }
+
+        @include abstracts.screen(sm) {
+            max-height: calc(100vh - 230px);
+            padding-bottom: 60px;
         }
     }
 }
