@@ -11,7 +11,6 @@ html {
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
-    --top-act-group-avatar: rgba(0, 0, 0, 0.08);
 
     @include abstracts.screen(lg) {
         --header-bg-color: #fff;
@@ -59,4 +58,29 @@ html {
 
     // Forms
     --form-placeholder-color: #d2d1d6;
+
+    // Product detail
+    --product-detail-bg: #fff;
+    --product-detail-info-bg: #f6f6f6;
+    --product-detail-info-content-bg: #fff;
+    --product-detail-tag-bg: #ededf6;
+
+    @include abstracts.screen(md) {
+        --product-detail-bg: #fafafd;
+        --product-detail-info-bg: #fff;
+    }
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #f6f6f6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #fff;
+    }
+
+    // Search bar
+    --search-bar-bg: #fff;
+
+    // Review card
+    --review-card-bg: #fafafd;
 }
