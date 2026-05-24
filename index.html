@@ -51,9 +51,13 @@
                                 <picture>
                                     <source
                                         media="(max-width: 767.98px)"
-                                        srcset="./assets/imgs/slideshow/item1-md.png"
+                                        srcset="./assets/imgs/slideshow/summerCocktaimd.png"
                                     />
-                                    <img src="./assets/imgs/slideshow/item1.png" alt="" class="slideshow__img" />
+                                    <img
+                                        src="./assets/imgs/slideshow/summerCocktai.png"
+                                        alt=""
+                                        class="slideshow__img"
+                                    />
                                 </picture>
                             </a>
                         </div>
@@ -608,5 +612,40 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
+
+        <div class="newsletter-modal">
+            <div class="newsletter-overlay"></div>
+
+            <div class="newsletter-content">
+                <button class="newsletter-close">×</button>
+
+                <div class="newsletter-left">
+                    <img src="./assets/imgs/modal/modal crop.png" alt="" />
+                </div>
+
+                <div class="newsletter-right">
+                    <span class="newsletter-label"> SHINRIN WELLNESS </span>
+
+                    <h2 class="newsletter-title">Nhận ưu đãi & công thức mix mới mỗi tuần</h2>
+
+                    <p class="newsletter-desc">
+                        Đăng ký để nhận ưu đãi thức uống dinh dưỡng và cập nhật các hương vị mới từ ShinRin.
+                    </p>
+
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <input type="email" name="" id="" placeholder="Email" class="form__input" required />
+                            <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                        </div>
+                        <p class="form__error">The email address you just entered is incorrect. Please check again.</p>
+
+                        <button type="submit" class="btn btn--primary js-newsletter-group">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/newsletter.js"></script>
     </body>
 </html>
