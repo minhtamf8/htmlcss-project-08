@@ -4,13 +4,12 @@
     position: absolute;
     left: 0;
 
-    width: min(1240, 100%);
+    width: min(1240px, 100%);
     padding-top: 54px;
     display: none;
 
     @include abstracts.screen(lg) {
         position: initial;
-
         padding-top: 0;
     }
 
@@ -23,10 +22,10 @@
 
         border-radius: 20px;
         background: var(--dropdown-bg-color);
-        box-shadow: 0 40px 90px 20px var(--dropdown-shadow-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
 
         &::before {
-            content: url(../icons/dropdown-arrow.svg);
+            content: url("../icons/dropdown-arrow.svg");
             position: absolute;
             top: -13px;
             left: var(--arrow-left-pos);
@@ -45,6 +44,10 @@
                 content: none;
             }
         }
+
+        @include abstracts.screen(sm) {
+            padding: 0 20px;
+        }
     }
 }
 
@@ -57,7 +60,7 @@
     &__main {
         width: var(--main-column-width);
         height: var(--max-inner-height);
-        border-right: 1px solid var(--top-menu-boder-color);
+        border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
 
         @include abstracts.screen(lg) {
@@ -163,19 +166,20 @@
     display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--inner-padding);
+
     padding-left: var(--inner-padding);
 
-    overflow: auto;
+    overflow-y: auto;
 
     @include abstracts.screen(lg) {
         position: initial;
         grid-template-columns: 1fr;
-        margin-left: 0;
+        padding-left: 0;
     }
 
     &--not-main {
-        position: inherit;
-        inset: inherit;
+        position: initial;
+        inset: initial;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         height: var(--max-inner-height);

@@ -14,17 +14,16 @@
     border-radius: 20px;
 
     background: var(--filter-form-bg);
-    filter: drop-shadow(0 40px 90px var(--filter-form-shadow));
+    filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
     transition: opacity, visibility;
     transition-duration: 0.2s;
 
     @include abstracts.screen(sm) {
+        width: 100vw;
+        height: 100vh;
         position: fixed;
         inset: 0;
         border-radius: 0;
-
-        width: 85vw;
-        height: 100vh;
     }
 
     &.hide {
@@ -132,12 +131,12 @@
             line-height: 146.667%;
 
             &::placeholder {
-                font-weight: 400;
                 color: #9e9da8;
+                font-weight: 400;
             }
 
             @include abstracts.screen(sm) {
-                font-style: 1.6rem !important;
+                font-size: 1.6rem !important;
             }
         }
 
@@ -145,7 +144,7 @@
             margin-left: 12px;
         }
     }
-    //end form
+    // End form
 
     &__row {
         display: flex;
@@ -170,7 +169,7 @@
 
         @include abstracts.screen(sm) {
             position: sticky;
-            bottom: 0;
+            bottom: 30px;
             background: var(--filter-form-bg);
         }
     }
@@ -201,7 +200,7 @@
     }
 
     &__content {
-        max-height: calc(100vh - 200px);
+        max-height: calc(100vh - 350px);
         overflow-y: auto;
         overscroll-behavior: contain;
 

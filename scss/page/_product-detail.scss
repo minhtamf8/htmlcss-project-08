@@ -19,10 +19,6 @@
 
 .prod-info-content {
     border-radius: 20px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
     background: var(--product-detail-info-content-bg);
 }
 
@@ -84,12 +80,8 @@
         width: 65px;
         height: 65px;
         object-fit: contain;
-        border: 1.5px solid rgb(158, 157, 168, 0.3);
+        border: 1px solid rgb(158, 157, 168, 0.3);
         border-radius: 8px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
         opacity: 0.9;
         transition: opacity, border-color;
         transition-duration: 0.3s;
@@ -162,10 +154,6 @@
         padding: 2px 8px;
         border-radius: 4px;
         margin-left: 10px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
         background: rgb(103 176 68 / 20%);
         color: #67b044;
         font-size: 1.4rem;
@@ -233,14 +221,11 @@
         display: flex;
         align-items: center;
         margin: 0 -30px;
-<<<<<<< HEAD
 
         @include abstracts.screen(md) {
             margin: 0 -20px;
             flex-wrap: wrap;
         }
-=======
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
     }
 
     &__item {
@@ -249,7 +234,6 @@
         font-size: 2.2rem;
         font-weight: 500;
         line-height: 145.455%;
-<<<<<<< HEAD
         user-select: none;
         white-space: nowrap;
 
@@ -261,8 +245,6 @@
         &:not(&--current) {
             cursor: pointer;
         }
-=======
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
 
         &--current {
             color: inherit;
@@ -280,25 +262,17 @@
             display: block;
         }
     }
-<<<<<<< HEAD
 
     &__text-content {
         margin-top: -20px;
     }
-=======
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
 }
 
 .prod-content {
     &__heading {
         margin-bottom: 30px;
-        font-size: 2.4rem;
-        font-weight: 700;
-<<<<<<< HEAD
         font-size: 2.2rem;
         font-weight: 600;
-=======
->>>>>>> 0390511e96f9fa5d6b6aa1b3d3521f0be36963a1
         line-height: 141.667%;
     }
 }

@@ -1,13 +1,13 @@
-@use "../abstracts";
-
 .product-card {
     display: flex;
     flex-direction: column;
+
     height: 100%;
     padding: 16px;
     border-radius: 20px;
+
     background: var(--product-card-bg);
-    box-shadow: 0 20px 60px 10px var(--product-card-shadow);
+    box-shadow: 0px 20px 60px 10px var(--product-card-shadow);
 
     &__img-wrap {
         position: relative;
@@ -31,10 +31,6 @@
 
     &__title {
         margin-top: 16px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2; /* số dòng tối đa */
-        -webkit-box-orient: vertical;
-        overflow: hidden;
     }
 
     &__title,
