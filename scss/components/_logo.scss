@@ -1,14 +1,33 @@
 @use "../abstracts";
 
 .logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
-    gap: 14px;
+    // gap: 8px;
 
     &__title {
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 145.455%;
     }
+
+    &__title span {
+        display: block;
+        margin-left: 0.6em;
+        text-align: center;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+
+    clip-path: inset(50%);
 }
