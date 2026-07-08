@@ -5,10 +5,22 @@
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
 
-        <!-- Logo -->
+        <!-- logo -->
         <a href="./" class="logo top-bar__logo">
-            <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img top-bar__logo-img" />
-            <h1 class="logo__title top-bar__logo-title">grocerymart</h1>
+            <img
+                src="./assets/icons/logoshinrin.svg"
+                alt="ShinRin | Thức uống dinh dưỡng và tốt cho sức khỏe"
+                class="logo__img top-bar__logo-img"
+            />
+
+            <!-- cho screen reader -->
+            <span class="sr-only"> Thức uống dinh dưỡng và tốt cho sức khỏe </span>
+
+            <!-- hiển thị -->
+            <h1 class="logo__title top-bar__logo-title" aria-hidden="true">
+                <span>ShinRin</span>
+                <span>wellness</span>
+            </h1>
         </a>
 
         <!-- Navbar -->
@@ -4754,7 +4766,7 @@
                                 <a href="#!" class="user-menu__link">Settings</a>
                             </li>
                             <li class="user-menu__separate">
-                                <a href="./sign-in.html" class="user-menu__link">Logout</a>
+                                <a href="./signin.html" class="user-menu__link">Logout</a>
                             </li>
                         </ul>
                     </div>

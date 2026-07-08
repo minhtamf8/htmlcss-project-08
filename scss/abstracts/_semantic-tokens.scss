@@ -1,0 +1,45 @@
+// =========================
+// BRAND
+// =========================
+
+:root {
+    --primary-color: #5f9f7f;
+    --primary-light: #7ab896;
+    --primary-dark: #4d8668;
+
+    // =========================
+    // TEXT
+    // =========================
+
+    --text-color: #1a162e;
+    --text-light: #6c6c72;
+    --text-muted: #9b9ba5;
+
+    // =========================
+    // BACKGROUND
+    // =========================
+
+    --bg-color: #ffffff;
+    --surface-color: #f8f8f8;
+    --surface-secondary: #f2f5f3;
+
+    // =========================
+    // BORDER
+    // =========================
+
+    --border-color: #e6e6e6;
+
+    // =========================
+    // STATE
+    // =========================
+
+    --success-color: #3ba55c;
+    --warning-color: #d9a441;
+    --danger-color: #d95c5c;
+
+    // =========================
+    // SHADOW
+    // =========================
+
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}

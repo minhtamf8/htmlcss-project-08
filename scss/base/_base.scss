@@ -12,7 +12,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: Gordita, sans-serif;
+    font-family: "Inter", arial, sans-serif;
     color: var(--text-color);
     background: var(--body-bg);
 }
@@ -43,6 +43,12 @@ textarea {
     border: none;
     color: inherit;
     -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 input {
