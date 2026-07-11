@@ -2291,14 +2291,14 @@ html {
   display: flex;
   overflow: hidden;
 }
-.slideshow__item {
+.slideshow__items {
   position: relative;
   flex-shrink: 0;
   width: 100%;
   padding-top: 34%;
 }
 @media (max-width: 767.98px) {
-  .slideshow__item {
+  .slideshow__items {
     padding-top: 50%;
   }
 }
